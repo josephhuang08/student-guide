@@ -60,38 +60,15 @@ This also applies if your use your own computer.
   If you want a GUI, you can try installing `git-gui` or use the CLion plugin "Git Integration". (You do *not* need the GitHub or GitLab plugins.)
 * Use your system's package manager to install *CMake*. There is a curses based terminal GUI and a Qt based GUI.
 
-## Prepare for GitLab access
+## Prepare for GitHub access
 
-!!! hint
-    Our team uses Git repositories from **two** different hosts:: **gitlab.hrz.tu-chemnitz.de** and **gitlab.com**. The gitlab host setups described below need to be done for both hosts.
-
-### Windows 10: Generate SSH keys for gitlab.hrz.tu-chemnitz.de access
+### Windows 10: Generate SSH keys
 
 * open a windows powershell
 * type `ssh-keygen -t ed25519 -C "ssh-key-TUC"`
 * the command prompt will ask for a file name and passphrase: keep it empty and press enter until you see the following statement;
 * `Your identification has been saved in C:\Users\...\.ssh\id_ed25519`
-* cd into this folder
-* rename the files `id_ed25519` and `id_ed25519.pub` to `id_ed25519_gitlab_tuc` and `id_ed25519_gitlab_tuc.pub`
-* this can be done via
-```
-ren id_ed25519 id_ed25519_gitlab_tuc
-ren id_ed25519.pub id_ed25519_gitlab_tuc.pub
-```
 
-### Windows 10: Generate SSH keys for gitlab.com access
-
-* open a Windows PowerShell
-* type `ssh-keygen -t ed25519 -C "ssh-key-gitlab_com"`
-* the command prompt will ask for a file name and passphrase: keep it empty and press enter until you see the following statement;
-* `Your identification has been saved in C:\Users\...\.ssh\id_ed25519`
-* cd into this folder
-* rename the files `id_ed25519` and `id_ed25519.pub` to `id_ed25519_gitlab_com` and `id_ed25519_gitlab_com.pub`
-* this can be done via
-```
-ren id_ed25519 id_ed25519_gitlab_com
-ren id_ed25519.pub id_ed25519_gitlab_com.pub
-```
 
 ### Windows 10: Configure your SSH
 
@@ -106,27 +83,19 @@ echo "This is sample text" > config
 
 ```
 
-# gitlab.hrz.tu-chemnitz.de account
-Host gitlab.hrz.tu-chemnitz.de
- HostName gitlab.hrz.tu-chemnitz.de
+# github.com account
+Host github.com
+ HostName github.com
  User INSERT-YOUR-USERNAME-HERE
- IdentityFile ~/.ssh/id_ed25519_gitlab_tuc
-
-# gitlab.com account
-Host gitlab.com
- HostName gitlab.com
- User INSERT-YOUR-USERNAME-HERE
- IdentityFile ~/.ssh/id_ed25519_gitlab_com 
+ IdentityFile ~/.ssh/id_ed25519
 ```
 
-* the user names are your user handle for the respective gitlab instance, it should look something like *abcd*
 * save and close the file (**without** a file extension). Make sure to use "UTF-8" encoding system when editing the file, this can be done using Notepad++.
 
 ----
 
-* Deploy your public keys:
-  * for gitlab.hrz.tu-chemnitz.de (file `id_ed25519_gitlab_tuc.pub`) [here](https://gitlab.hrz.tu-chemnitz.de/-/profile/keys)
-  * for gitlab.com (file `id_ed25519_gitlab_com.pub`) [here](https://gitlab.com/-/profile/keys).
+* Deploy your public key:
+  * for github.com (file `id_ed25519.pub`) [here](https://github.com/settings/keys).
   
 !!! hint
     Prefer notepad++ or notepad to view the files. The files contain both the key and the key title. Make sure to paste the key under key section and title under title section.
@@ -136,32 +105,23 @@ Host gitlab.com
 ### Windows 10: Test your SSH key setup
 
 * open Windows Powershell
-* type `ssh -T git@gitlab.hrz.tu-chemnitz.de`
-* agree to add *gitlab.hrz.tu-chemnitz.de* to the list of trusted hosts
-* Run the above command once more, and you should only receive a *Welcome to GitLab, @username!* message.
-
-* type `ssh -T git@gitlab.com`
-* agree to add *GitLab.com* to the list of trusted hosts
-* Run the above command once more, and you should only receive a *Welcome to GitLab, @username!* message.
+* type `ssh -T git@github.com`
+* agree to add *github.com* to the list of trusted hosts
+* Run the above command once more, and you should only receive a *Welcome to GitHub, @username!* message.
 
 If the welcome message doesn’t appear, run SSH’s verbose mode by replacing `-T` with `-vvvT` to understand where the error is.
 
-----------
 
-Source and more detailed information: https://docs.gitlab.com/ee/ssh/
-
-### Linux: Generate SSH keys for GitLab access
+### Linux: Generate SSH keys
 
 * Create a public/private key pair using the ssh-keygen commandline tool.  
-  It is recommended to use the default paths for the keys. If you want to use custom key paths, look [here](https://gitlab.hrz.tu-chemnitz.de/help/ssh/README#working-with-non-default-ssh-key-pair-paths).
-* Deploy your public SSH key \(usually stored in ~/.ssh/id\_rsa.pub\) [here](https://gitlab.hrz.tu-chemnitz.de/profile/keys).
+  It is recommended to use the default paths for the keys.
+* Deploy your public SSH key \(usually stored in ~/.ssh/id\_rsa.pub\) [here](https://github.com/settings/keys).
 * Additionally, specifically on Ubuntu, it might be necessary to do `ssh-add`. Look [here](https://stackoverflow.com/questions/6167905/git-clone-through-ssh).
 
-## Save the public SSH Key in GitLab
+## Save the public SSH Key in GitHub
 
-* Go to [GitLab.hrz](https://gitlab.hrz.tu-chemnitz.de/) as well as to [Gitlab.com](https://gitlab.com/) and Log in. The group maintains repositories on both sites. Therefore the remaining Gitlab setup instructions in this chapter apply to **both** sites (the user interfaces are the same)
-* Click in the upper right corner and go to Settings
-* In your User Settings go to the column SSH Keys
+* Go to [GitHub.com](https://github.com/settings/keys).
 * paste your public SSH Key and add a Title
 * click on "Add Key" to confirm
 
@@ -169,7 +129,6 @@ Source and more detailed information: https://docs.gitlab.com/ee/ssh/
 
 ## Additional Steps
 * Install Miniconda \(based on Python 3\) by following the [Conda How-To](https://draive.com/link_dev/guide/01_Conda_Setup/) and install the most important dependencies.
-* Activate your [GitLab account for TU Chemnitz](https://gitlab.hrz.tu-chemnitz.de). Send an email to your supervisor to inform him that you have activated your GitLab account. Include your URZ user name (your supervisor needs it to give you access to repositories).
 * [Create an avatar](http://avatarmaker.com/) for your GitLab account. Add it to your GitLab [profile](https://gitlab.com/-/profile).
 
 ## Prepare for software version control
