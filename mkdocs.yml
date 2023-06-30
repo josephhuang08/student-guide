@@ -85,6 +85,7 @@ nav:
     - 'Getting Started': content-onboarding/onboarding.md
     - 'HiWi responsibilities': content-onboarding/hiwi.md
     - 'Working with GitHub': content-onboarding/working-with-GitHub.md
+    - 'Working with KATA': content-onboarding/KATA.md
   - 'Knowledge Base':
     - 'Guidelines for conducting Test Drives': content-knowledgebase/test_drive.md
     - 'Common pitfalls and how to avoid them': content-knowledgebase/common_pitfalls.md
