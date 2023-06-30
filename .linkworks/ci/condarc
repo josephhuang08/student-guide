@@ -1,0 +1,7 @@
+# This file was generated automatically. DO NOT EDIT!
+# To update this file, change the configuration in linkworks-ci.yml and rerender using lw-tool-ci-generator.
+channel_priority: strict
+channels:
+- https://conda.linkworks.io/t/$LINKWORKS_PULL_TOKEN/get/link-developers
+- https://conda.linkworks.io/t/$LINKWORKS_PULL_TOKEN/get/draive-release
+- conda-forge

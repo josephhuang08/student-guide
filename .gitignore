@@ -1,0 +1,8 @@
+/*build*/
+*.bak
+[._]*.swp
+*~
+.devenv/
+.vscode/
+.cache/
+.idea/

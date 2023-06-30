@@ -1,0 +1,9 @@
+# This is an automatically generated file. DO NOT EDIT.
+environment:
+  DEPLOY_CHANNEL: link-developers
+  PRIMARY_AUTHOR: Matthias Gabriel
+  PROJECT_LOCATION: https://github.com/tuc-nt-df/student-guide
+  PROJECT_NAME: Student Guide
+  PROJECT_SUMMARY: Student Guide with onboarding and knowledge base
+revision: 0
+template: ld-generic

@@ -1,0 +1,99 @@
+# This file was generated automatically. DO NOT EDIT!
+# To update this file, change the configuration in linkworks-ci.yml and rerender using lw-tool-ci-generator.
+name: linkworks-ci-cd
+on:
+  workflow_dispatch:
+  repository_dispatch:
+    types: run-ci-cd
+  push:
+  pull_request:
+
+env:
+  CONDARC: '${{ github.workspace }}/.linkworks/ci/condarc'
+  LINKWORKS_PULL_TOKEN: '${{ secrets.LINKWORKS_PULL_TOKEN }}'
+
+jobs:
+  # --- verify ---
+  verify:
+    name: 'Repository verification'
+    runs-on: [self-hosted, linkworks, docker, Linux, X64]
+    steps:
+      - name: 'Checkout repository'
+        uses: actions/checkout@v3 # required for config files
+        with:
+          submodules: false
+      - name: 'Prepare environment'
+        run: mamba install -y lw-tool-lara
+      - name: 'Show environment'
+        run: mamba list
+      - name: 'Verify repository'
+        run: python ".linkworks/verification/verify.py" .
+
+  # --- custom jobs and includes ---
+  # ci-build-mkdocs.yml
+#
+# This file is part of project link.developers/Student Guide.
+# It is copyrighted by the contributors recorded in the version control history of the file,
+# available from its original location https://github.com/tuc-nt-df/student-guide.
+#
+# SPDX-License-Identifier: MPL-2.0
+#
+  build_documentation:
+    name: 'Build documentation'
+    runs-on: [self-hosted, linkworks, docker, Linux, X64] # build_platform: linux-64
+    steps:
+      - name: 'Checkout repository'
+        uses: actions/checkout@v3
+        with:
+          submodules: recursive
+          fetch-depth: 0
+      - name: 'Prepare environment'
+        run: mamba install -y mkdocs mkdocs-git-revision-date-localized-plugin mkdocs-material mkdocs-material-extensions
+      - name: 'Show environment'
+        run: mamba list
+      - name: 'Build'
+        run: mkdocs build -c -d ./site
+
+  lint_documentation:
+    name: 'Check documentation formatting'
+    runs-on: [self-hosted, linkworks, docker, Linux, X64] # build_platform: linux-64
+    steps:
+      - name: 'Checkout repository'
+        uses: actions/checkout@v3
+        with:
+          submodules: recursive
+          fetch-depth: 0
+      - name: 'Markdown Linting'
+        continue-on-error: true # let's treat this as non-critical for now
+        uses: DavidAnson/markdownlint-cli2-action@v9
+        with:
+          globs: |
+            README.md
+            docs/**/*.md
+
+  deploy_documentation:
+    name: 'Deploy documentation'
+    if: |
+      (!contains(github.event.head_commit.message, '[skip deploy]') &&
+      !contains(github.event.head_commit.message, '[deploy skip]')) &&
+      github.ref_name == github.event.repository.default_branch &&
+      github.repository == 'TUC-NT-DF/student-guide'
+    needs:
+      - verify
+      - build_documentation
+      - lint_documentation
+    runs-on: [self-hosted, linkworks, docker, Linux, X64]
+    steps:
+      - name: 'Checkout repository'
+        uses: actions/checkout@v3
+        with:
+          submodules: recursive
+          fetch-depth: 0
+      - name: 'Prepare environment'
+        run: mamba install -y mkdocs mkdocs-git-revision-date-localized-plugin mkdocs-material mkdocs-material-extensions
+      - name: 'Show environment'
+        run: mamba list
+      - name: 'Deploy'
+        run: mkdocs gh-deploy
+
+

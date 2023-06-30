@@ -1,0 +1,19 @@
+file_version: 1
+channel_sources:
+    - https://conda.linkworks.io/t/$LINKWORKS_PULL_TOKEN/get/link-developers
+    - https://conda.linkworks.io/t/$LINKWORKS_PULL_TOKEN/get/draive-release
+    - conda-forge
+channel_targets:
+    - link-developers
+project_location: 'https://github.com/tuc-nt-df/student-guide'
+
+# no build stage
+build_matrix: []
+
+verify_script: '.linkworks/verification/verify.py'
+workflow_job_includes:
+    - 'ci-build-mkdocs.yml'
+
+build_stage: false
+test_stage: false
+deploy_stage: false
