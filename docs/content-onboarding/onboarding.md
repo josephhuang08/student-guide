@@ -1,17 +1,16 @@
 # Prepare your work environment
 
-Help us to improve this guide. Practice the GitLab workflow by improving or by adding something to this [guide](https://gitlab.com/StudentProjects/guide).
+Help us to improve this guide. Practice the GitHub workflow by improving or by adding something to this [guide](https://github.com/TUC-NT-DF/student-guide).
 
 !!! hint
     Every student of our team should contribute with at least **two commits** to this guide to make it better and to extend it. The easiest way is to look for problems **you** have with our onboarding process. Identify missing or incomplete pieces in this guide and improve it using the forking workflow. **Additionally**, choose one issue from the issue tracker of this project and solve it. Thank you 👍
 
-If you don't have the access to this [guide](https://gitlab.com/StudentProjects/guide) please ask to your supervisor for a permission.
 
 # System requirements
 
 In order to install and use our tools, you need one of the following platforms:
 - Windows 10 (Intel 64-bit) or higher
-- Ubuntu 18.04 (Intel 64-bit) or higher
+- Ubuntu 22.04 (Intel 64-bit) or higher
 
 # Secure your laptop or notebook computer
 
@@ -40,16 +39,12 @@ Setup Bitlocker on Windows 10:
 This also applies if your use your own computer.
 
 ### Windows
-* IDE for software development and debugging: Visual Studio Enterprise Edition 2019 \(via [Microsoft Imagine Premium-Portal](https://www.tu-chemnitz.de/urz/software/dreamspark.php) of TU Chemnitz\). That link will take you to Azure developer tools website. Provide your TUC email address and confirm registration. Then you can download the Visual Studio Installer. Currently only 2019 version is available.
-* Git client: [SourceTree](https://de.atlassian.com/software/sourcetree) or [Visual Studio Code](https://code.visualstudio.com/)
-* editing markup \(.md\) files: [Atom editor](https://atom.io)
-  * install the following packages for the Atom editor
-    * Markdown Preview Plus
-    * Markdown Preview Plus Opener
-    * Markdown Scroll Sync
+
+* IDE for software development and debugging: [Visual Studio Code](https://code.visualstudio.com/)
+* Git client: [Visual Studio Code](https://code.visualstudio.com/)
 * editing markup \(.md\) files: [Visual Studio Code](https://code.visualstudio.com/)
   * install the following extensions
-    * GitLab Workflow
+    * GitHub
     * markdownlint
 * if you need to write JavaScript code and you don't have a good JS IDE available yet, consider
   * Visual Studio Ultimate Edition or
@@ -58,13 +53,9 @@ This also applies if your use your own computer.
 * Install [Git](https://git-scm.com/)
 
 ### Linux
-* IDE for software development and debugging: [CLion](https://www.jetbrains.com/clion/) \(free for academic users\)
-  * It is recommended to install/enable these additional plugins:
-    * "Markdown" (syntax highlighting + preview for .md files)
-    * "YAML" (syntax highlighting for .yaml files)
+* IDE for software development and debugging: [Visual Studio Code](https://code.visualstudio.com/)
 * [Webstorm](https://www.jetbrains.com/webstorm/) (if you need to write JavaScript)
-    * most CLion plugins work in Webstorm as well
-* editing markup \(.md\) files: CLion/Webstorm (see above) or [Atom editor](https://atom.io) (see Windows section for details)
+* editing markup \(.md\) files: [Visual Studio Code](https://code.visualstudio.com/)
 * Git client: A console-based Git client should already be on your system. (called `git`)  
   If you want a GUI, you can try installing `git-gui` or use the CLion plugin "Git Integration". (You do *not* need the GitHub or GitLab plugins.)
 * Use your system's package manager to install *CMake*. There is a curses based terminal GUI and a Qt based GUI.
