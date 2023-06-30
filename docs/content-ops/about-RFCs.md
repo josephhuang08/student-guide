@@ -8,7 +8,8 @@ All libraries and products implement contracts, explicit or implicit. Contracts 
 
 ## Contracts
 
-{% hint style='info' %}The following content is cited from Pieter Hintjens Book *ZeroMQ*, Chapter 7. For a more complete and comprehensive explanation see [2]. The book is very much recommended.{% endhint %}
+!!! hint
+    The following content is cited from Pieter Hintjens Book *ZeroMQ*, Chapter 7. For a more complete and comprehensive explanation see [2]. The book is very much recommended.
 
 A good software architecture depends on contracts, and the more explicit they are, the better things scale.
 

@@ -2,7 +2,8 @@
 
 Help us to improve this guide. Practice the GitLab workflow by improving or by adding something to this [guide](https://gitlab.com/StudentProjects/guide).
 
-{% hint style='info' %}Every student of our team should contribute with at least **two commits** to this guide to make it better and to extend it. The easiest way is to look for problems **you** have with our onboarding process. Identify missing or incomplete pieces in this guide and improve it using the forking workflow. **Additionally**, choose one issue from the issue tracker of this project and solve it. Thank you 👍 {% endhint %}
+!!! hint
+    Every student of our team should contribute with at least **two commits** to this guide to make it better and to extend it. The easiest way is to look for problems **you** have with our onboarding process. Identify missing or incomplete pieces in this guide and improve it using the forking workflow. **Additionally**, choose one issue from the issue tracker of this project and solve it. Thank you 👍
 
 If you don't have the access to this [guide](https://gitlab.com/StudentProjects/guide) please ask to your supervisor for a permission.
 
@@ -70,7 +71,8 @@ This also applies if your use your own computer.
 
 ## Prepare for GitLab access
 
-{% hint style='info' %}Our team uses Git repositories from **two** different hosts:: **gitlab.hrz.tu-chemnitz.de** and **gitlab.com**. The gitlab host setups described below need to be done for both hosts.{% endhint %}
+!!! hint
+    Our team uses Git repositories from **two** different hosts:: **gitlab.hrz.tu-chemnitz.de** and **gitlab.com**. The gitlab host setups described below need to be done for both hosts.
 
 ### Windows 10: Generate SSH keys for gitlab.hrz.tu-chemnitz.de access
 
@@ -135,7 +137,8 @@ Host gitlab.com
   * for gitlab.hrz.tu-chemnitz.de (file `id_ed25519_gitlab_tuc.pub`) [here](https://gitlab.hrz.tu-chemnitz.de/-/profile/keys)
   * for gitlab.com (file `id_ed25519_gitlab_com.pub`) [here](https://gitlab.com/-/profile/keys).
   
-{% hint style='info' %} Prefer notepad++ or notepad to view the files. The files contain both the key and the key title. Make sure to paste the key under key section and title under title section.{% endhint %}
+!!! hint
+    Prefer notepad++ or notepad to view the files. The files contain both the key and the key title. Make sure to paste the key under key section and title under title section.
 
 **Ignore** the statement "Before you can add an SSH key you need to generate it." You just created this key.
 

@@ -12,7 +12,8 @@ Again :): *A job as undergraduate research assistant comes with great responsibi
 
 If you have been offered a contract, our secretary (Ms. Stark, Weinholdbau Room 406) will contact you by email. She will ask you to prepare paperwork and drop by to sign the contract.
 
-{% hint style='danger' %}Please respond to her emails within one business day.{% endhint %}
+!!! warning
+    Please respond to her emails within one business day.
 
 If you do reply on time:
 

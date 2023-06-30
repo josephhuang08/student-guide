@@ -36,7 +36,8 @@ We use "forking workflow." Please read
 
 - Clone your personal fork (origin) to your harddrive using Git/Sourcetree. The SSH Path to your origin can be found in the web interface (as shown in the following screenshot). This will be your working directory. Please commit and push regularily!
 
-{% hint style='info' %} If you are using <b>git-bash</b>, use insert button to paste the SSH path after copying it to clipboard. {% endhint %}
+!!! info
+    If you are using <b>git-bash</b>, use insert button to paste the SSH path after copying it to clipboard.
 
 ![sorry, image not available](../assets/origin_ssh_path.png "where to find the SSH path")
 
@@ -46,7 +47,8 @@ We use "forking workflow." Please read
 
 ## Attention
 
-{% hint style='danger' %}Never use spaces in folder oder filenames.{% endhint %}
+!!! warning
+    Never use spaces in folder oder filenames.
 
 
 ## Commits and merge requests
