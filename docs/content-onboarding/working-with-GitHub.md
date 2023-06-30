@@ -1,6 +1,7 @@
-# Working with GitLab
+# Working with GitHub
 
-**GitLab** is a web-based **Git** repository manager with wiki and issue tracking features.
+**GitHub, Inc**. is a platform and cloud-based service for software development and version control using **Git**, allowing developers to store and manage their code. It provides the distributed version control of **Git** plus access control, bug tracking, software feature requests, task management, continuous integration, and wikis for every project.
+
 **Git** is a version control system (VCS) for tracking changes in computer files and coordinating work on those files among multiple people. It is primarily used for software development. [Source: Wikipedia].
 
 ## How to do good source control
@@ -47,7 +48,7 @@ We use "forking workflow." Please read
 
 ## Attention
 
-!!! warning
+!!! danger
     Never use spaces in folder oder filenames.
 
 
