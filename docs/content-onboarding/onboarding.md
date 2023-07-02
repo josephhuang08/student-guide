@@ -44,7 +44,7 @@ This also applies if your use your own computer.
 * Git client: [Visual Studio Code](https://code.visualstudio.com/)
 * editing markup \(.md\) files: [Visual Studio Code](https://code.visualstudio.com/)
   * install the following extensions
-    * GitHub
+    * GitHub pull requests and issues extension
     * markdownlint
 * if you need to write JavaScript code and you don't have a good JS IDE available yet, consider
   * Visual Studio Ultimate Edition or
