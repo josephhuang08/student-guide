@@ -16,6 +16,8 @@
 ### Windows
 Most of our colleagues use [SourceTree](https://www.sourcetreeapp.com/) as version control GUI. (Also available for Mac OS X.)
 
+Sourcetree is a sofware solution still recommended for windows to provide a git graphical interface. It allows to connect to git repositories to easily perform all necessary git related tasks. it is a simple and user friendly which makes life of git users easier.  
+
 You are free to use other tools like [command line](https://git-scm.com/book/en/v2/Getting-Started-The-Command-Line) or [TortoiseGit](https://tortoisegit.org/) but we can not provide support for these tools.
 
 
@@ -76,8 +78,7 @@ Please follow [PC3](../content-ops/PC3.md) for commits and merge requests.
 
 ![sorry, image not available](../assets/gitlab-workflow-MRsize-goodbad.jpg "too much code")
 
-#### Pushing to a repository with 2FA(2 Factor Authentication)
-While pushing to a repository on which 2FA is enabled, you will be asked for a Personal Access Token. The procedure on how to create a PAT is described [here](https://docs.gitlab.com/ce/user/profile/personal_access_tokens.html). Once a PAT is created, please save the PAT somwhere *_safe_* (you will not be able to view it a second time) and use the same instead of your password.
+
 
 ## Issues and issue tracker
 
@@ -91,21 +92,6 @@ Start each issue with "Problem:" in the title and describe the problem in the de
 ![sorry, image not available](../assets/issue-pos.jpg "example of good issue management")
 
 
-
-## Provide your real full name and create an avatar
-Provide your real full name in your profile settings.
-
-- https://gitlab.hrz.tu-chemnitz.de/profile
-
-Please give your GitLab profile an Avatar or suitable photo.
-
-In computing, an avatar is the graphical representation of the user or the user's alter ego or character.
-
-- https://gitlab.hrz.tu-chemnitz.de/profile
-
-There are Avatar generators available:
-- http://avatarmaker.com/
-- http://www.pcworld.com/article/172320/article.html
 
 # FAQ
 
