@@ -91,6 +91,21 @@ Start each issue with "Problem:" in the title and describe the problem in the de
 ### Example for good issue handling:
 ![sorry, image not available](../assets/issue-pos.jpg "example of good issue management")
 
+## Provide your real full name and create an avatar
+
+provide your real full name in your profile settings.
+
+-https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-github-profile/customizing-your-profile/personalizing-your-profile#changing-your-profile-name
+
+Please give your GitHub profile an Avatar or suitable photo.
+
+-https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-github-profile/customizing-your-profile/personalizing-your-profile#changing-your-profile-picture
+
+In computing, an avatar is the graphical representation of the user or the user's alter ego or character.
+
+There are Avatar generators available:
+-http://avatarmaker.com/
+-http://www.pcworld.com/article/172320/article.html
 
 
 # FAQ
