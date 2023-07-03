@@ -80,6 +80,11 @@ Please follow [PC3](../content-ops/PC3.md) for commits and merge requests.
 
 
 
+
+#### Pushing to a repository with 2FA(2 Factor Authentication)
+While pushing to a repository on which 2FA is enabled, you will be asked for a Personal Access Token. The procedure on how to create a PAT is described [here](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens). Once a PAT is created, please save the PAT somewhere *_safe_* (you will not be able to view it a second time) and use the same instead of your password.
+
+
 ## Issues and issue tracker
 
 Use the issue tracker to discuss issues and ideas with your colleagues.
