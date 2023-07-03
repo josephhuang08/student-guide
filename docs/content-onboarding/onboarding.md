@@ -132,7 +132,7 @@ Guide for test your SSH connection is [here](https://docs.github.com/en/authenti
 
 ## Additional Steps
 * Install Miniconda \(based on Python 3\) by following the [Conda How-To](https://draive.com/link_dev/guide/01_Conda_Setup/) and install the most important dependencies.
-* [Create an avatar](http://avatarmaker.com/) for your GitHub account. Add it to your GitHub [profile](https://github.com/login?return_to=https%3A%2F%2Fgithub.com%2F-%2Fprofile).
+* [Create an avatar](http://avatarmaker.com/) for your GitHub account. Add it to your GitHub [profile](https://github.com/settings/profile).
 
 ## Prepare for software version control
 
