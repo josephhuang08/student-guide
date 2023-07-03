@@ -1,13 +1,16 @@
 Our colleague Peter Kueffner shares a few notes about avoiding issues that Windows users have, when trying out Ubuntu (e.g. by setting up a Ubuntu VM):
 
 ## SSH/SFTP access
-- In order to be able to use PuTTY and FileZilla with Ubuntu, you need to install the `openssh-server` package via apt-get.
+- In order to be able to use PuTTY and FileZilla with Ubuntu, you need to install the `openssh-server` package via apt-get. This can be done via
+'''
+sudo apt-get install openssh-server
+'''
 - No adjustments to the Firewall should be required after the installation. (Just note that you can't log in as *root* user.)
 - You can connect to the Ubuntu using FileZilla via SFTP with the username/password you use to log in there.  
     You need to explicitly specify that in the URL.
     e.g. with `sftp://10.0.0.1/`
 
-## Getting GitLab access working
+## Getting GitHub access working
 - You need your private SSH key on the machine.
 - Then SSH key needs to be in OpenSSH format (*not* PuTTY's ppk).
     You can use PuTTYgen to convert your PPK key into OpenSSH format (`Conversions` menu).  
