@@ -98,7 +98,7 @@ Host github.com
 
 **Ignore** the statement "Before you can add an SSH key you need to generate it." You just created this key.
 
-### Test your SSH key setup
+#### Test your SSH key setup
 
 * open Windows Powershell
 * type `ssh -T git@github.com`
@@ -106,8 +106,6 @@ Host github.com
 * Run the above command once more, and you should only receive a *Welcome to GitHub, @username!* message.
 
 If the welcome message doesn’t appear, run SSH’s verbose mode by replacing `-T` with `-vvvT` to understand where the error is.
-
----
 
 ### Linux
 
@@ -118,8 +116,6 @@ If the welcome message doesn’t appear, run SSH’s verbose mode by replacing `
 * Deploy your public SSH key \(usually stored in ~/.ssh/id\_rsa.pub\) [here](https://github.com/settings/keys).
 * Additionally, specifically on Ubuntu, it might be necessary to do `ssh-add`. Look [here](https://stackoverflow.com/questions/6167905/git-clone-through-ssh).
 
----
-
 ### Deploy SSH Public Key to GitHub
 
 * Go to [SSH keys](https://github.com/settings/keys) settings in GitHub.
@@ -129,14 +125,6 @@ If the welcome message doesn’t appear, run SSH’s verbose mode by replacing `
 * Paste your public key from the file that was generated (`C:\Users\...\.ssh\id_ed25519.pub`) into the `Key` field.
 * Click on `Add SSH Key` button.
 ![Deploy Public SSH Key to GitHub](../assets/deploy-ssh-key.png "Deploy Public SSH Key to GitHub")
-
-## Save the public SSH Key in GitHub
-
-* Go to [GitHub.com](https://github.com/settings/keys).
-* paste your public SSH Key and add a Title
-* click on "Add Key" to confirm
-
-![sorry, image not available](../assets/ssh.png "")
 
 ## Additional Steps
 * Install Miniconda \(based on Python 3\) by following the [Conda How-To](https://draive.com/link_dev/guide/01_Conda_Setup/) and install the most important dependencies.
