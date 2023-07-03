@@ -103,7 +103,7 @@ Host github.com
 ![Deploy Public SSH Key to GitHub](../assets/deploy-ssh-key.png "Deploy Public SSH Key to GitHub")
 
 !!! hint
-    Prefer notepad++ or notepad to view the files. The files contain both the key and the key title. Make sure to paste the key under key section and title under title section.
+    Prefer [Notepad++](https://notepad-plus-plus.org/), [Visual Studio Code](https://code.visualstudio.com/), or Notepad to view the files. The files contain both the key and the key title. Make sure to paste the key under key section and title under title section.
 
 **Ignore** the statement "Before you can add an SSH key you need to generate it." You just created this key.
 
