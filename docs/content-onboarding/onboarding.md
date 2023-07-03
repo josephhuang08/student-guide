@@ -92,11 +92,16 @@ Host github.com
 
 * save and close the file (**without** a file extension). Make sure to use "UTF-8" encoding system when editing the file, this can be done using Notepad++.
 
-----
+### Deploy SSH Public Key to GitHub
 
-* Deploy your public key:
-  * for github.com (file `id_ed25519.pub`) [here](https://github.com/settings/keys).
-  
+* Go to [SSH keys](https://github.com/settings/keys) settings in GitHub.
+* Click on `New SSH key` button.
+* Enter `Title` of your choice (e.g. `ssh-key-TUC`).
+* Set `Key Type` as `Authentication Key`.
+* Paste your public key from the file that was generated (`C:\Users\...\.ssh\id_ed25519.pub`) into the `Key` field.
+* Click on `Add SSH Key` button.
+![Deploy Public SSH Key to GitHub](../assets/deploy-ssh-key.png "Deploy Public SSH Key to GitHub")
+
 !!! hint
     Prefer notepad++ or notepad to view the files. The files contain both the key and the key title. Make sure to paste the key under key section and title under title section.
 
