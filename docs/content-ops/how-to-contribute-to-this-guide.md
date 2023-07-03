@@ -2,13 +2,13 @@
 
 ## The repository for this guide
 
-This guide is hosted in a [GitLab repository](https://gitlab.com/StudentProjects/guide).
+This guide is hosted in a [GitHub repository](https://github.com/TUC-NT-DF/student-guide/blob/master/docs/content-ops/how-to-contribute-to-this-guide.md).
 
 If you want to contribute, please fork, modify and create a merge request following PC3.
 
 ## Markdown
 
-Please use [markdown ](https://docs.gitlab.com/ee/user/markdown.html#standard-markdown) for your text.
+Please use [markdown ](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax) for your text.
 
 ## Linter
 
@@ -23,7 +23,7 @@ We recommend to follow the [Wikipedia manual of style](https://en.wikipedia.org/
 
 ## Syntax highlighting for code blocks
 
-Only the [fenced](https://docs.gitlab.com/ee/user/markdown.html#code-and-syntax-highlighting) code blocks support syntax highlighting. You need to provide a [language indicator](http://prismjs.com/#languages-list) as well.
+Only the [fenced](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/creating-and-highlighting-code-blocks#syntax-highlighting) code blocks support syntax highlighting. You need to provide a [language indicator](http://prismjs.com/#languages-list) as well.
 
 Example for C++ language indicator `cpp`:
 
