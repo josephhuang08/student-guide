@@ -62,13 +62,14 @@ This also applies if your use your own computer.
 
 ## Prepare for GitHub access
 
+For a detailed understanding of GitHub access with SSH keys go to this [link](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/about-ssh) in the GitHub docs.
+
 ### Windows 10: Generate SSH keys
 
 * open a windows powershell
 * type `ssh-keygen -t ed25519 -C "ssh-key-TUC"`
 * the command prompt will ask for a file name and passphrase: keep it empty and press enter until you see the following statement;
 * `Your identification has been saved in C:\Users\...\.ssh\id_ed25519`
-
 
 ### Windows 10: Configure your SSH
 
@@ -110,6 +111,8 @@ Host github.com
 * Run the above command once more, and you should only receive a *Welcome to GitHub, @username!* message.
 
 If the welcome message doesn’t appear, run SSH’s verbose mode by replacing `-T` with `-vvvT` to understand where the error is.
+
+Guide for test your SSH connection is [here](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/testing-your-ssh-connection)
 
 
 ### Linux: Generate SSH keys
