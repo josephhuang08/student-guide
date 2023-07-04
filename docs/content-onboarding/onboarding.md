@@ -62,9 +62,15 @@ This also applies if your use your own computer.
 
 ## Prepare for GitHub access
 
+
+For a detailed understanding of GitHub access with SSH keys go to this [link](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/about-ssh) in the GitHub docs.
+
+
+
 ### Windows 10
 
 #### Generate SSH keys
+
 
 * open a windows powershell
 * type `ssh-keygen -t ed25519 -C "ssh-key-TUC"`
@@ -72,7 +78,10 @@ This also applies if your use your own computer.
 * `Your identification has been saved in C:\Users\...\.ssh\id_ed25519`
 
 
+
+
 #### Configure your SSH
+
 
 * open a Windows PowerShell
 * cd into the `.ssh` folder (was at `C:\Users\...\.ssh`)
@@ -107,7 +116,12 @@ Host github.com
 
 If the welcome message doesn’t appear, run SSH’s verbose mode by replacing `-T` with `-vvvT` to understand where the error is.
 
+
+Guide for test your SSH connection is [here](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/testing-your-ssh-connection)
+
+
 ### Linux
+
 
 #### Generate SSH keys
 
@@ -128,13 +142,13 @@ If the welcome message doesn’t appear, run SSH’s verbose mode by replacing `
 
 ## Additional Steps
 * Install Miniconda \(based on Python 3\) by following the [Conda How-To](https://draive.com/link_dev/guide/01_Conda_Setup/) and install the most important dependencies.
-* [Create an avatar](http://avatarmaker.com/) for your GitLab account. Add it to your GitLab [profile](https://gitlab.com/-/profile).
+* [Create an avatar](http://avatarmaker.com/) for your GitHub account. Add it to your GitHub [profile](https://github.com/settings/profile).
 
 ## Prepare for software version control
 
 **please read and follow the instructions carefully!**
 
-[The GitLab workflow used by our team...](working-with-GitHub.md)
+[The GitHub workflow used by our team...](working-with-GitHub.md)
 
 # Meeting and communication with your supervisor
 
