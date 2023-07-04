@@ -62,16 +62,26 @@ This also applies if your use your own computer.
 
 ## Prepare for GitHub access
 
+
 For a detailed understanding of GitHub access with SSH keys go to this [link](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/about-ssh) in the GitHub docs.
 
-### Windows 10: Generate SSH keys
+
+
+### Windows 10
+
+#### Generate SSH keys
+
 
 * open a windows powershell
 * type `ssh-keygen -t ed25519 -C "ssh-key-TUC"`
 * the command prompt will ask for a file name and passphrase: keep it empty and press enter until you see the following statement;
 * `Your identification has been saved in C:\Users\...\.ssh\id_ed25519`
 
-### Windows 10: Configure your SSH
+
+
+
+#### Configure your SSH
+
 
 * open a Windows PowerShell
 * cd into the `.ssh` folder (was at `C:\Users\...\.ssh`)
@@ -83,7 +93,6 @@ echo "This is sample text" > config
 * open the file with a text editor and type
 
 ```
-
 # github.com account
 Host github.com
  HostName github.com
@@ -93,17 +102,12 @@ Host github.com
 
 * save and close the file (**without** a file extension). Make sure to use "UTF-8" encoding system when editing the file, this can be done using Notepad++.
 
-----
-
-* Deploy your public key:
-  * for github.com (file `id_ed25519.pub`) [here](https://github.com/settings/keys).
-  
 !!! hint
-    Prefer notepad++ or notepad to view the files. The files contain both the key and the key title. Make sure to paste the key under key section and title under title section.
+    Prefer [Notepad++](https://notepad-plus-plus.org/), [Visual Studio Code](https://code.visualstudio.com/), or Notepad to view the files. The files contain both the key and the key title. Make sure to paste the key under key section and title under title section.
 
 **Ignore** the statement "Before you can add an SSH key you need to generate it." You just created this key.
 
-### Windows 10: Test your SSH key setup
+#### Test your SSH key setup
 
 * open Windows Powershell
 * type `ssh -T git@github.com`
@@ -112,23 +116,29 @@ Host github.com
 
 If the welcome message doesn’t appear, run SSH’s verbose mode by replacing `-T` with `-vvvT` to understand where the error is.
 
+
 Guide for test your SSH connection is [here](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/testing-your-ssh-connection)
 
 
-### Linux: Generate SSH keys
+### Linux
+
+
+#### Generate SSH keys
 
 * Create a public/private key pair using the ssh-keygen commandline tool.  
   It is recommended to use the default paths for the keys.
 * Deploy your public SSH key \(usually stored in ~/.ssh/id\_rsa.pub\) [here](https://github.com/settings/keys).
 * Additionally, specifically on Ubuntu, it might be necessary to do `ssh-add`. Look [here](https://stackoverflow.com/questions/6167905/git-clone-through-ssh).
 
-## Save the public SSH Key in GitHub
+### Deploy SSH Public Key to GitHub
 
-* Go to [GitHub.com](https://github.com/settings/keys).
-* paste your public SSH Key and add a Title
-* click on "Add Key" to confirm
-
-![sorry, image not available](../assets/ssh.png "")
+* Go to [SSH keys](https://github.com/settings/keys) settings in GitHub.
+* Click on `New SSH key` button.
+* Enter `Title` of your choice (e.g. `ssh-key-TUC`).
+* Set `Key Type` as `Authentication Key`.
+* Paste your public key from the file that was generated (`C:\Users\...\.ssh\id_ed25519.pub`) into the `Key` field.
+* Click on `Add SSH Key` button.
+![Deploy Public SSH Key to GitHub](../assets/deploy-ssh-key.png "Deploy Public SSH Key to GitHub")
 
 ## Additional Steps
 * Install Miniconda \(based on Python 3\) by following the [Conda How-To](https://draive.com/link_dev/guide/01_Conda_Setup/) and install the most important dependencies.
