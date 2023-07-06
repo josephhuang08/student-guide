@@ -30,7 +30,7 @@ We use "forking workflow." Please read
 - https://www.atlassian.com/git/tutorials/comparing-workflows/forking-workflow
 - http://blog.scottlowe.org/2015/01/27/using-fork-branch-git-workflow/
 
-![sorry, image not available](../assets/gitlab_workflow_beginner_01.png "most simple forking workflow")
+![sorry, image not available](../assets/github_workflow_beginner_01.png "most simple forking workflow")
 
 
 - Fork the repository which was given to you by your supervisor (later called "upstream") using the web interface. A valid fork name should not include special characters e.g. " ' ".
