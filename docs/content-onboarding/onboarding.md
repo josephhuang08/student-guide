@@ -166,9 +166,9 @@ In addition to email most of our team uses encrypted messaging. Please consult y
 
 ## Write down all your findings
 
-Please use an old-school paper notebook \(minimum size: DIN A5\) to write down your tasks, findings, ideas, results. Do not use single sheets of paper. They get lost easily. Have this notebook ready during your work and in our meetings.
+Please use an old-school paper notebook \(minimum size: DIN A5\) to write down your tasks, findings, ideas, results. Do not use notebooks where sheets can easily come off nor single sheets of paper. They get lost easily. Have this notebook ready during your work and in our meetings.
 
-![sorry, image not available](../assets/student-onboarding-notebook.jpg "paper notebook for your notes")
+![sorry, image not available](../assets/student-onboarding-notebook.png "paper notebook for your notes")
 
 
 # How to develop software with less pain
