@@ -61,6 +61,9 @@ Please follow [PC3](../content-ops/PC3.md) for commits and merge requests.
 
 <b>The title of MR MUST contain a definition of the current problem ("Problem: ..."). The proposed solution ("Solution: ...") MUST be written in the description field of MR.</b>
 
+<b>! Important Note: Merging is only done by SUPERVISORS!
+That means: when you're asked to upload files or update a repository, DO NOT MERGE, but only create a Pull Request and assign it to your supervisor so that they can merge it after checking it. So please only follow the [WORKFLOW](../assets/github_workflow_beginner_01.png) mentioned previously!</b>
+
 ![sorry, image not available](../assets/gitlab-workflow-ProbSol-example.jpg "Example of MR creation")
 
 
