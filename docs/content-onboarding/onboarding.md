@@ -103,7 +103,7 @@ Host github.com
 * save and close the file (**without** a file extension). Make sure to use "UTF-8" encoding system when editing the file, this can be done using Notepad++.
 
 !!! hint
-    Prefer [Notepad++](https://notepad-plus-plus.org/), [Visual Studio Code](https://code.visualstudio.com/), or Notepad to view the files. The files contain both the key and the key title. Make sure to paste the key under key section and title under title section.
+    Prefer [Notepad++](https://notepad-plus-plus.org/), [Visual Studio Code](https://code.visualstudio.com/), or Notepad to view the files. The files contain both the key and the key title. Next login to Github > setting > SSH and GPG keys > New SSH key. Make sure to paste the key under key section and title under title section.
 
 **Ignore** the statement "Before you can add an SSH key you need to generate it." You just created this key.
 
@@ -112,7 +112,7 @@ Host github.com
 * open Windows Powershell
 * type `ssh -T git@github.com`
 * agree to add *github.com* to the list of trusted hosts
-* Run the above command once more, and you should only receive a *Welcome to GitHub, @username!* message.
+* Run the above command once more, and you should only receive a *Hi USERNAME! You've successfully authenticated, but GitHub does not provide shell access.* message.
 
 If the welcome message doesn’t appear, run SSH’s verbose mode by replacing `-T` with `-vvvT` to understand where the error is.
 
