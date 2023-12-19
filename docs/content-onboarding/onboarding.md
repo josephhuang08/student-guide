@@ -161,7 +161,7 @@ Meet your supervisor regularly. If you have a meeting,
 
 In addition to email most of our team uses encrypted messaging. Please consult your supervisor which encryped messenger to use - or just install both :)
 
-- Primary: [Riot - open source team collaboration tool](https://about.riot.im/)
+- Primary: [element - a secure communications platform](https://element.io/)
 - Backup: [Signal messenger](https://whispersystems.org/)
 
 ## Write down all your findings
@@ -206,7 +206,7 @@ You are working in a research lab now. Bill Freeman's very true article describe
 
 Are you wondering about the German business and working culture? This guide from the _Deutsche Gesellschaft für Internationale Zusammenarbeit \(GIZ\)_ provides some insights:
 
-[Cross-Cultural Management: How to Do Business with Germans - A Guide –](http://www.asprea.org/imagenes/GIZ-_How_to_do_business_with_Germans_Kavalchuk-angles-1359942678515.pdf)
+[Cross-Cultural Management: How to Do Business with Germans - A Guide –](https://www.managerprogramm.de/wp-content/uploads/2020/03/Kavalchuk-How_to_do_business_with_Germans-EN.pdf)
 
 # FAQ
 
