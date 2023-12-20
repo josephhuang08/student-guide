@@ -103,7 +103,7 @@ Host github.com
 * save and close the file (**without** a file extension). Make sure to use "UTF-8" encoding system when editing the file, this can be done using Notepad++.
 
 !!! hint
-    Prefer [Notepad++](https://notepad-plus-plus.org/), [Visual Studio Code](https://code.visualstudio.com/), or Notepad to view the files. The files contain both the key and the key title. Make sure to paste the key under key section and title under title section.
+    Prefer [Notepad++](https://notepad-plus-plus.org/), [Visual Studio Code](https://code.visualstudio.com/), or Notepad to view the files. The files contain both the key and the key title. Next login to Github > setting > SSH and GPG keys > New SSH key. Make sure to paste the key under key section and title under title section.
 
 **Ignore** the statement "Before you can add an SSH key you need to generate it." You just created this key.
 
@@ -112,7 +112,7 @@ Host github.com
 * open Windows Powershell
 * type `ssh -T git@github.com`
 * agree to add *github.com* to the list of trusted hosts
-* Run the above command once more, and you should only receive a *Welcome to GitHub, @username!* message.
+* Run the above command once more, and you should only receive a *Hi USERNAME! You've successfully authenticated, but GitHub does not provide shell access.* message.
 
 If the welcome message doesn’t appear, run SSH’s verbose mode by replacing `-T` with `-vvvT` to understand where the error is.
 
@@ -161,7 +161,7 @@ Meet your supervisor regularly. If you have a meeting,
 
 In addition to email most of our team uses encrypted messaging. Please consult your supervisor which encryped messenger to use - or just install both :)
 
-- Primary: [Riot - open source team collaboration tool](https://about.riot.im/)
+- Primary: [element - a secure communications platform](https://element.io/)
 - Backup: [Signal messenger](https://whispersystems.org/)
 
 ## Write down all your findings
@@ -206,7 +206,7 @@ You are working in a research lab now. Bill Freeman's very true article describe
 
 Are you wondering about the German business and working culture? This guide from the _Deutsche Gesellschaft für Internationale Zusammenarbeit \(GIZ\)_ provides some insights:
 
-[Cross-Cultural Management: How to Do Business with Germans - A Guide –](http://www.asprea.org/imagenes/GIZ-_How_to_do_business_with_Germans_Kavalchuk-angles-1359942678515.pdf)
+[Cross-Cultural Management: How to Do Business with Germans - A Guide –](https://www.managerprogramm.de/wp-content/uploads/2020/03/Kavalchuk-How_to_do_business_with_Germans-EN.pdf)
 
 # FAQ
 
