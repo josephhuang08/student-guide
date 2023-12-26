@@ -51,7 +51,7 @@ We use "forking workflow." Please read
 ## Attention
 
 !!! danger
-    Never use spaces in folder oder filenames.
+    Never use spaces in folder or filenames.
 
 
 ## Commits and pull requests
