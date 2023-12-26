@@ -68,6 +68,8 @@ That means: when you're asked to upload files or update a repository, DO NOT MER
 
 
 ## Bad and good examples
+!!! info
+    The example pictures below are from GitLab, but the concepts are equally applicable to GitHub.
 
 ### Pull Requests with wrong title and too much code (see below):
 
