@@ -44,7 +44,7 @@ We use "forking workflow." Please read
 
 ![sorry, image not available](../assets/origin_ssh_path.png "where to find the SSH path")
 
-- To submit your code to the upstream repository, create a merge request from your personal fork in the web interface
+- To submit your code to the upstream repository, create a pull request from your personal fork in the web interface
 
 - if you need to update your personal fork from the project it was created from, do a "pull from upstream" --> https://help.github.com/articles/merging-an-upstream-repository-into-your-fork/
 
@@ -54,30 +54,30 @@ We use "forking workflow." Please read
     Never use spaces in folder oder filenames.
 
 
-## Commits and merge requests
-Please follow [PC3](../content-ops/PC3.md) for commits and merge requests.
+## Commits and pull requests
+Please follow [PC3](../content-ops/PC3.md) for commits and pull requests.
 
-<b>A proper merge request MUST follow *Problem:/Solution:* syntax and solve **only one small** problem.</b>
+<b>A proper pull request MUST follow *Problem:/Solution:* syntax and solve **only one small** problem.</b>
 
-<b>The title of MR MUST contain a definition of the current problem ("Problem: ..."). The proposed solution ("Solution: ...") MUST be written in the description field of MR.</b>
+<b>The title of PR MUST contain a definition of the current problem ("Problem: ..."). The proposed solution ("Solution: ...") MUST be written in the description field of PR.</b>
 
 <b>! Important Note: Merging is only done by SUPERVISORS!
 That means: when you're asked to upload files or update a repository, DO NOT MERGE, but only create a Pull Request and assign it to your supervisor so that they can merge it after checking it. So please only follow the [WORKFLOW](../assets/github_workflow_beginner_01.png) mentioned previously!</b>
 
-![sorry, image not available](../assets/gitlab-workflow-ProbSol-example.jpg "Example of MR creation")
+![sorry, image not available](../assets/pull_request_example.jpg "Example of PR creation")
 
 
 ## Bad and good examples
 
-### Merge Requests with wrong title and too much code (see below):
+### Pull Requests with wrong title and too much code (see below):
 
-![sorry, image not available](../assets/gitlab-workflow-MRs-goodbad.jpg "wrong merge request")
+![sorry, image not available](../assets/gitlab-workflow-MRs-goodbad.jpg "wrong pull request")
 
 ### Commits with unclear content description:
 
 ![sorry, image not available](../assets/gitlab-workflow-ProbSol-goodbad.jpg "wrong commit")
 
-### Commits of MR solving multiple problems and MR with too much code:
+### Commits of PR solving multiple problems and PR with too much code:
 
 ![sorry, image not available](../assets/gitlab-workflow-MRsize-goodbad.jpg "too much code")
 
@@ -128,9 +128,9 @@ There are Avatar generators available:
 
  -----
 
-**Q:** What do you mean with Problem/Solution statement according to [PC3](../content-ops/PC3.md) in the merge requests?
+**Q:** What do you mean with Problem/Solution statement according to [PC3](../content-ops/PC3.md) in the pull requests?
 
-**A:** A merge request contains a solution to a **single** and **small** problem. You need to name the problem and its solution in the MR.
+**A:** A pull request contains a solution to a **single** and **small** problem. You need to name the problem and its solution in the PR.
 
 A problem description does **not** start with *to*.
 
